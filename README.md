@@ -157,3 +157,11 @@ Install the required libraries:
 
 ```bash
 pip install pandas numpy matplotlib seaborn streamlit
+
+
+5. Click **Preview** to check how it looks.
+6. Click **Commit changes**.
+7. Commit message:
+
+```text
+Improve project documentation
