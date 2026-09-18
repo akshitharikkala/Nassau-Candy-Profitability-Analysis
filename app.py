@@ -31,7 +31,7 @@ st.write(
 # ---------------------------------------------------------
 # LOAD DATA
 # ---------------------------------------------------------
-DATA_FILE = "Nassau Candy Distributor.csv"
+DATA_FILE = ("Nassau Candy Distributor.csv")
 
 if not DATA_FILE.exists():
     st.error("Dataset file not found.")
