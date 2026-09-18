@@ -33,7 +33,7 @@ st.write(
 # ---------------------------------------------------------
 DATA_FILE = "Nassau Candy Distributor.csv"
 
-if not DATA_FILE.exists():
+DATA_FILE = Path("Nassau Candy Distributor.csv")
     st.error(
         "Nassau_Candy_Distributor.csv was not found. "
         "Make sure the CSV file is in the same folder as app.py."
