@@ -31,21 +31,17 @@ st.write(
 # ---------------------------------------------------------
 # LOAD DATA
 # ---------------------------------------------------------
-DATA_FILE = Path("Nassau_Candy_Cleaned.csv")
+DATA_FILE = "Nassau Candy Distributor.csv"
 
 if not DATA_FILE.exists():
     st.error(
-        "Nassau_Candy_Cleaned.csv was not found. "
+        "Nassau_Candy_Distributor.csv was not found. "
         "Make sure the CSV file is in the same folder as app.py."
     )
     st.stop()
 
-df = pd.read_csv(
-    DATA_FILE,
-    encoding="latin1",
-    on_bad_lines="skip",
-    engine="python"
-)
+df = pd.read_csv(DATA_FILE, encoding="latin1")
+
 
 # ---------------------------------------------------------
 # DATA PREPARATION
