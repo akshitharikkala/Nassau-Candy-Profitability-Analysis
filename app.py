@@ -40,8 +40,12 @@ if not DATA_FILE.exists():
     )
     st.stop()
 
-df = pd.read_csv(DATA_FILE, encoding="latin1", on_bad_lines="skip")
-
+df = pd.read_csv(
+    DATA_FILE,
+    encoding="latin1",
+    on_bad_lines="skip",
+    engine="python"
+)
 
 # ---------------------------------------------------------
 # DATA PREPARATION
