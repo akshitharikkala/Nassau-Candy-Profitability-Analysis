@@ -40,7 +40,7 @@ if not DATA_FILE.exists():
     )
     st.stop()
 
-df = pd.read_csv(DATA_FILE)
+df = pd.read_csv(DATA_FILE, encoding="latin1")
 
 
 # ---------------------------------------------------------
