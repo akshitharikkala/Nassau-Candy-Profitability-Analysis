@@ -31,14 +31,13 @@ st.write(
 # ---------------------------------------------------------
 # LOAD DATA
 # ---------------------------------------------------------
-DATA_FILE = ("Nassau Candy Distributor.csv")
+DATA_FILE = Path("Nassau Candy Distributor.csv")
 
 if not DATA_FILE.exists():
     st.error("Dataset file not found.")
     st.stop()
 
 df = pd.read_csv(DATA_FILE, encoding="latin1")
-
 
 # ---------------------------------------------------------
 # DATA PREPARATION
