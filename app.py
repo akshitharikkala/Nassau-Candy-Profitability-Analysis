@@ -33,11 +33,8 @@ st.write(
 # ---------------------------------------------------------
 DATA_FILE = "Nassau Candy Distributor.csv"
 
-DATA_FILE = Path("Nassau Candy Distributor.csv")
-    st.error(
-        "Nassau_Candy_Distributor.csv was not found. "
-        "Make sure the CSV file is in the same folder as app.py."
-    )
+if not DATA_FILE.exists():
+    st.error("Dataset file not found.")
     st.stop()
 
 df = pd.read_csv(DATA_FILE, encoding="latin1")
